@@ -1,0 +1,49 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  padding: 2rem;
+  box-sizing: border-box;
+  height: 150px;
+  border: 2px solid #646cff;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.grid {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+.box:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.grid-wrapper {
+  max-width: 500px;
+}
+
+.game-winner {
+  color: #646cff;
+}
+
+.game-drawn {
+  color: darkseagreen;
+}
+
+@media screen and (max-width: 375px) {
+  .box {
+    width: 45%;
+  }
+}
